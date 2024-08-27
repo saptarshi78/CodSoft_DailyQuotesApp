@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header TextView with Underline -->
+    <TextView
+        android:id="@+id/header_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quote of the Day"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/header_text_view"
+        android:layout_alignStart="@id/header_text_view"
+        android:layout_alignEnd="@id/header_text_view"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/quote_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/header_text_view"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/new_quote_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Quote"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/quote_text_view"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/share_quote_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Quote"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/new_quote_button"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/add_favorite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Favorites"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/share_quote_button"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/favorite_quotes_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Quotes:"
+        android:layout_below="@id/add_favorite_button"
+        android:layout_marginTop="16dp" />
+
+    <!-- Footer TextView -->
+    <TextView
+        android:id="@+id/footer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by:- Saptarshi"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>
